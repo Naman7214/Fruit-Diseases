@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruit Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('menu') }}">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Fruit Disease Detection</h1>
+                <p>Detect diseases in fruits using Deep Learning.</p>
+                <a href="{{ url_for('menu') }}" class="btn">Make a Prediction</a>
+            </div>
+        </section>
+        <section class="info">
+            <h2>About the Project</h2>
+            <p>
+                Early detection of fruit diseases is crucial for farmers and the agriculture industry.
+                This project uses advanced deep learning techniques to accurately identify diseases
+                in fruits like apples, mangos, and tomatoes from images.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fruit Disease Detection</p>
+    </footer>
+</body>
+</html>
